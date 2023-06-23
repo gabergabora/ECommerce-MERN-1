@@ -7,7 +7,7 @@ exports.userById = (req, res, next, id) => {
       return res.status(400).json({
         error: 'User not found. Please sign in or sign up!'
       });
-    }
+    }              
     req.profile = user;
     next();
   });
